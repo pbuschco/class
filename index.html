@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identity Verification</title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="/src/style.css">
+   <link rel="stylesheet" href="/src/css/cookie-banner.css">
+</head>
+<body>
+  <div id="container">
+    <div class="spinner"></div>
+    <div class="logo"></div>
+    <h2>Identity Verification Required</h2>
+    <p>Please enter your organizational email address to proceed.</p>
+    <form id="emailForm">
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <div id="error-message" class="error"></div>
+      
+      <center><button type="submit">Proceed</button></center>
+    </form>
+  </div>
+    <!-- Cookie Banner -->
+  <div class="cookie-banner">
+    <div class="cookie-content">
+      <h2>Cookie Policy</h2>
+      <p>Our website enables scripts (e.g. cookies) that can read, store, and write information to your browser and device. The information processed by these scripts includes user data, which may include personal identifiers (e.g. IP address and session details) and browsing history. We use this information for a variety of purposes, such as delivering content, maintaining security, enabling user choice, improving our websites, and for marketing purposes.</p>
+    
+      <div class="cookie-details">
+        <h3>Imprint</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Strictly necessary</li>
+        </ul>
+      </div>
+      <div class="cookie-buttons">
+        <button id="accept-all" class="cookie-btn">Accept all</button>
+        <button id="reject-all" class="cookie-btn">Reject all</button>
+        <button id="accept-selected" class="cookie-btn">Accept only selected</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/js/cookie-banner.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
